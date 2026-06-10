@@ -17,6 +17,17 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  // Proxy /wp-content/uploads/* to the live WordPress origin so images
+  // resolve on Vercel before the asset migration (Phase 9) is complete.
+  async rewrites() {
+    return [
+      {
+        source: "/wp-content/uploads/:path*",
+        destination: "https://sierradigitalinc.com/wp-content/uploads/:path*",
+      },
+    ];
+  },
+
   // Redirect legacy WP URLs to their canonical Next.js equivalents.
   async redirects() {
     return LEGACY_REDIRECTS.map(({ from, to, permanent }) => ({
