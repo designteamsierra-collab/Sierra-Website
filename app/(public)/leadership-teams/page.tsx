@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 };
 
 const MEMBERS = [
-  { name: "Senthil Kumar", role: "Chairman & CEO", image: "/wp-content/uploads/2025/07/Senthil-Kumar-ceo.webp", href: "/leadership-team/senthil-kumar/" },
-  { name: "Sudhakar Virupakshi", role: "Senior Vice President", image: "/wp-content/uploads/2025/07/sudhakar.webp", href: "/leadership-team/sudhakar-virupakshi/" },
-  { name: "Maya Bava", role: "Chief Operating Officer", image: "/wp-content/uploads/2025/07/Maya-Bava-COO.webp", href: "/leadership-team/maya-bava/" },
-  { name: "Narasimman L. Madhavarao", role: "Chief Product & Transformation Officer", image: "/wp-content/uploads/2025/07/narasimman.webp", href: "/leadership-team/narasimman-l-madhavarao/" },
-  { name: "Karl Schmidt", role: "Vice President – Oil & Gas Advisory", image: "/wp-content/uploads/2025/07/Karl-Schmidt-VP-Oil-Gas.webp", href: "/leadership-team/karl-schmidt/" },
-  { name: "Sriman Narayanan Sundararaman", role: "Vice President – Sales", image: "/wp-content/uploads/2026/02/MicrosoftTeams-image-45-1.jpg", href: "/leadership-team/sriman-narayanan-sundararaman/" },
-  { name: "TC Venkatesan", role: "Senior Director – Innovation Advisory", image: "/wp-content/uploads/2025/07/TC-Venkatesan.webp", href: "/leadership-team/tc-venkatesan/" },
-  { name: "Scott Gabelhart", role: "Senior Director – Data Strategy & Innovation", image: "/wp-content/uploads/2025/07/Scott-Gabelhart.webp", href: "/leadership-team/scott-gabelhart/" },
-  { name: "Sameel Baker", role: "Director & Global Head of Products – Energy & Commodity Management", image: "/wp-content/uploads/2025/07/sameel-baker.webp", href: "/leadership-team/sameel-baker/" },
-  { name: "Rajan Marathe", role: "Director Business Intelligence", image: "/wp-content/uploads/2025/07/Rajan-Marathae.webp", href: "/leadership-team/rajan-marathe/" },
-  { name: "Kaviarasan Thangarasu", role: "Director of SAP Data and Analytics", image: "/wp-content/uploads/2025/07/kaviarasan.webp", href: "/leadership-team/kaviarasan-thangarasu/" },
-  { name: "M.S. Mohanraj", role: "Director of Sales", image: "/wp-content/uploads/2025/07/Mohanraj.webp", href: "/leadership-team/m-s-mohanraj/" },
-  { name: "Venkata Rama Vikas Chinta", role: "Cloud Advisor", image: "/wp-content/uploads/2025/07/Vikas-Chinta.webp", href: "/leadership-team/venkata-rama-vikas-chinta/" },
-  { name: "Robert Jones", role: "Delivery Director, Customer Success", image: "/wp-content/uploads/2025/07/Robert-Jones.webp", href: "/leadership-team/robert-jones/" },
-  { name: "Suchindra Guru Pradeep Prabhakaran", role: "SAP Finance Advisory", image: "/wp-content/uploads/2025/07/Pradeep-Prabhakaran.webp", href: "/leadership-team/suchindra-guru-pradeep-prabhakaran/" },
-  { name: "Sandy Udupa", role: "Director of Finance", image: "/wp-content/uploads/2025/07/Sandy-Udupa.webp", href: "/leadership-team/sandy-udupa/" },
+  { name: "Senthil Kumar", role: "Chairman & CEO", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Senthil-Kumar-ceo.webp", href: "/leadership-team/senthil-kumar/" },
+  { name: "Sudhakar Virupakshi", role: "Senior Vice President", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/sudhakar.webp", href: "/leadership-team/sudhakar-virupakshi/" },
+  { name: "Maya Bava", role: "Chief Operating Officer", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Maya-Bava-COO.webp", href: "/leadership-team/maya-bava/" },
+  { name: "Narasimman L. Madhavarao", role: "Chief Product & Transformation Officer", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/narasimman.webp", href: "/leadership-team/narasimman-l-madhavarao/" },
+  { name: "Karl Schmidt", role: "Vice President – Oil & Gas Advisory", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Karl-Schmidt-VP-Oil-Gas.webp", href: "/leadership-team/karl-schmidt/" },
+  { name: "Sriman Narayanan Sundararaman", role: "Vice President – Sales", image: "https://sierradigitalinc.com/wp-content/uploads/2026/02/MicrosoftTeams-image-45-1.jpg", href: "/leadership-team/sriman-narayanan-sundararaman/" },
+  { name: "TC Venkatesan", role: "Senior Director – Innovation Advisory", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/TC-Venkatesan.webp", href: "/leadership-team/tc-venkatesan/" },
+  { name: "Scott Gabelhart", role: "Senior Director – Data Strategy & Innovation", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Scott-Gabelhart.webp", href: "/leadership-team/scott-gabelhart/" },
+  { name: "Sameel Baker", role: "Director & Global Head of Products – Energy & Commodity Management", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/sameel-baker.webp", href: "/leadership-team/sameel-baker/" },
+  { name: "Rajan Marathe", role: "Director Business Intelligence", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Rajan-Marathae.webp", href: "/leadership-team/rajan-marathe/" },
+  { name: "Kaviarasan Thangarasu", role: "Director of SAP Data and Analytics", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/kaviarasan.webp", href: "/leadership-team/kaviarasan-thangarasu/" },
+  { name: "M.S. Mohanraj", role: "Director of Sales", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Mohanraj.webp", href: "/leadership-team/m-s-mohanraj/" },
+  { name: "Venkata Rama Vikas Chinta", role: "Cloud Advisor", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Vikas-Chinta.webp", href: "/leadership-team/venkata-rama-vikas-chinta/" },
+  { name: "Robert Jones", role: "Delivery Director, Customer Success", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Robert-Jones.webp", href: "/leadership-team/robert-jones/" },
+  { name: "Suchindra Guru Pradeep Prabhakaran", role: "SAP Finance Advisory", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Pradeep-Prabhakaran.webp", href: "/leadership-team/suchindra-guru-pradeep-prabhakaran/" },
+  { name: "Sandy Udupa", role: "Director of Finance", image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/Sandy-Udupa.webp", href: "/leadership-team/sandy-udupa/" },
 ];
 
 export default function LeadershipTeamsPage() {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -106,7 +106,7 @@ export default function ContactPage() {
               <div className="flex items-center justify-center rounded-xl overflow-hidden bg-white border border-primary-100 p-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/wp-content/uploads/2025/07/book-a-call-with-our-BTP-Experts.png"
+                  src="https://sierradigitalinc.com/wp-content/uploads/2025/07/book-a-call-with-our-BTP-Experts.png"
                   alt="Book a call with our BTP Experts"
                   width={500}
                   height={500}

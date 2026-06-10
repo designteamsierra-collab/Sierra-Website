@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/wp-content/uploads/2025/12/data.jpg",
+        url: "https://sierradigitalinc.com/wp-content/uploads/2025/12/data.jpg",
         width: 547,
         height: 800,
         alt: "Sierra Digital",

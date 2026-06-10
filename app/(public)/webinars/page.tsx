@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -16,7 +16,7 @@ const UPCOMING_WEBINARS = [
   {
     title: "Built to Believe – BTP in a Day",
     href: "/webinar/built-to-believe-btp-in-a-day/",
-    image: "/wp-content/uploads/2026/03/BTP-in-a-day-featured-img-300x169.png",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2026/03/BTP-in-a-day-featured-img-300x169.png",
     excerpt: "Built to Believe – BTP in a Day SAP Business Technology Platform is where the next generation of enterprise capability is being built – and",
   },
 ];
@@ -25,19 +25,19 @@ const PAST_WEBINARS = [
   {
     title: "Sierra Digital & WalkMe: Supercharge Change Management with AI-Driven Digital Adoption",
     href: "/webinar/sierra-digital-walkme-supercharge-change-management-with-ai-driven-digital-adoption/",
-    image: "/wp-content/uploads/2026/03/Untitled-11-300x169.png",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2026/03/Untitled-11-300x169.png",
     excerpt: "Supercharge Change Management with AI-Driven Digital Adoption The AI tech train is moving fast. Is your organization's digital adoption keeping up? Join Sierra Digital and",
   },
   {
     title: "The ROI of Data Transformation: Beyond Technical Migration",
     href: "/webinar/the-roi-of-data-transformation-beyond-technical-migration/",
-    image: "/wp-content/uploads/2025/07/webinar-bg-300x169.avif",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/webinar-bg-300x169.avif",
     excerpt: "Register Now LIVE THOUGHT LEADERSHIP ROUNDTABLE: Date: July 10th, 2025 Time: 11:30am Central Time Duration: 60 minutes + Q&A Cost: Complimentary for qualified professionals Leading",
   },
   {
     title: "Sierra Digital Develops SAP S/4HANA Extensions using AI services on SAP BTP",
     href: "/webinar/sierra-digital-develops-sap-s-4hana-extensions-using-ai-services-on-sap-btp/",
-    image: "/wp-content/uploads/2025/07/techvirtual-300x157.jpg",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/techvirtual-300x157.jpg",
     excerpt: "Register Now Join Sierra Digital at SAP TechEd Virtual and witness how we're revolutionizing SAP S/4HANA with cutting-edge AI services on SAP BTP! Innovative Extensions:",
   },
 ];

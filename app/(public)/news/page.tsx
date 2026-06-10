@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -16,19 +16,19 @@ const POSTS = [
   {
     title: "Sierra Digital and UiPath Celebrate Five Years of Partnership",
     href: "/news/sierra-digital-and-uipath-celebrate-five-years-of-partnership/",
-    image: "/wp-content/uploads/2026/02/sierra-and-ui-path.avif",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2026/02/sierra-and-ui-path.avif",
     excerpt: "Sierra Digital and UiPath Celebrate Five Years of Partnership Sierra Digital and UiPath Celebrate Five Years of Partnership Delivering Business Outcome–Focused Automation Solutions to",
   },
   {
     title: "Sierra Digital Joins the SAP AppHaus Network with New Innovation Hub",
     href: "/news/sierra-digital-joins-the-sap-apphaus-network-with-new-innovation-hub/",
-    image: "/wp-content/uploads/2025/07/sierra-apphaus-houston-opening.webp",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/sierra-apphaus-houston-opening.webp",
     excerpt: "Sierra Digital announces the inauguration of Sierra AppHaus Houston, a new innovation hub for the development of Business AI use cases. Get Started",
   },
   {
     title: "Sierra Digital acquires Stonebridge Consulting",
     href: "/news/sierra-digital-acquires-stonebridge-consulting/",
-    image: "/wp-content/uploads/2025/07/sierra-stonebridge-featured-img.webp",
+    image: "https://sierradigitalinc.com/wp-content/uploads/2025/07/sierra-stonebridge-featured-img.webp",
     excerpt: "Acquisition doubles corporation capacity to deliver best-in-class enterprise tech solutions in Energy and beyond. Get Started February 2, 2021 — Houston, TX Sierra Digital,",
   },
 ];

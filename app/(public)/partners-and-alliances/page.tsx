@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -14,22 +14,22 @@ export const metadata: Metadata = {
 
 const PARTNERS = [
   {
-    logo: "/wp-content/uploads/2025/07/sap-logo.png",
+    logo: "https://sierradigitalinc.com/wp-content/uploads/2025/07/sap-logo.png",
     name: "SAP",
     body: "Since 2002, Sierra Digital has served as a pure-play staffing and implementation partner to SAP — amassing an unparalleled reservoir of knowledge led by certified on-staff experts. As an SAP Silver Partner, we continue to develop innovations that accelerate, automate, and extend the power of SAP technology to deliver transformational business outcomes.",
   },
   {
-    logo: "/wp-content/uploads/2025/07/aws-logo.png",
+    logo: "https://sierradigitalinc.com/wp-content/uploads/2025/07/aws-logo.png",
     name: "AWS",
     body: "Sierra Digital is a proud partner to AWS, leveraging our combined resources to drive customer success with powerful cloud technologies. As the world's leading hyperscaler, AWS provides secure, reliable service to millions of customers — and with our domain expertise in SAP, Sierra delivers the focused insight that SAP customers on AWS need to enact meaningful change. Find our solutions on the AWS Marketplace.",
   },
   {
-    logo: "/wp-content/uploads/2025/07/microsoft-logo.png",
+    logo: "https://sierradigitalinc.com/wp-content/uploads/2025/07/microsoft-logo.png",
     name: "Microsoft",
     body: "Microsoft offers the trusted path to enterprise-ready innovation in the cloud — bringing the intelligence, security, and reliability of Azure to your SAP applications. Sierra partners with Microsoft and SAP to help companies migrate to Azure. Our BlueSky solution rapidly spins up instances, delivering capabilities to the business faster with the agility and flex of Microsoft's secure infrastructure.",
   },
   {
-    logo: "/wp-content/uploads/2025/12/Databricks_Logo-1024x538.png",
+    logo: "https://sierradigitalinc.com/wp-content/uploads/2025/12/Databricks_Logo-1024x538.png",
     name: "Databricks",
     body: "Sierra + Databricks: accelerating data & AI innovation. By combining Sierra's domain expertise with Databricks' unified analytics platform, we enable organizations to move faster and smarter with measurable impact — from joint industry events to Proof of Concepts like Capital Project Controls for a leading client.",
   },
