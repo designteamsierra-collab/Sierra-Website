@@ -1,0 +1,759 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   Sierra Digital - design tokens
+   Original to Sierra. Inspiration drawn from handhold.io's discipline (cool
+   neutrals, restrained motion, generous vertical rhythm) but distinctly Sierra:
+   slate scale neutrals (vs. handhold's zinc), deep teal-cyan brand primary,
+   warm terracotta accent.
+   ============================================================================ */
+
+@theme inline {
+  /* Typography stacks (variables provided by next/font in app/layout.tsx) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Consolas, monospace;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  /* ---- Brand colors --------------------------------------------------------
+     Distinguishing hues vs. handhold:
+     - Primary: deep teal-cyan (vs. handhold's saturated sky blue)
+     - Accent:  warm terracotta (vs. handhold's leafy green)
+     -------------------------------------------------------------------------- */
+  --color-primary-50: #eff8fb;
+  --color-primary-100: #d6edf3;
+  --color-primary-200: #aedce8;
+  --color-primary-300: #7cc4d7;
+  --color-primary-400: #44a3bd;
+  --color-primary-500: #218aa3;
+  --color-primary-600: #15728a;
+  --color-primary-700: #0e5b7e;
+  --color-primary-800: #0a4761;
+  --color-primary-900: #073549;
+  --color-primary-950: #042430;
+
+  --color-accent-50: #fff5ed;
+  --color-accent-100: #ffe7d4;
+  --color-accent-200: #ffcaa8;
+  --color-accent-300: #ffa470;
+  --color-accent-400: #fc7338;
+  --color-accent-500: #f44e12;
+  --color-accent-600: #e23808;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9b2e0d;
+  --color-accent-900: #7c2811;
+  --color-accent-950: #441108;
+
+  /* ---- Surfaces — handhold.io system: white page + warm off-white ------- */
+  --color-canvas: #ffffff;        /* pure white — primary body surface      */
+  --color-canvas-2: #f2f1ed;      /* warm off-white — alternating sections  */
+  --color-canvas-warm: #ece9e1;   /* warmer — testimonial / accent blocks   */
+  --color-canvas-cool: #fafafa;   /* near-white — for dashboards/inputs     */
+  --color-line: #e7e5df;          /* soft warm border line                  */
+  --color-line-strong: #d6d3ca;   /* stronger warm border                   */
+
+  /* Zinc/ink scale — primary text + button color (handhold mono) */
+  --color-ink: #0a0a0b;           /* near-black headlines + primary btn     */
+  --color-ink-2: #27272a;         /* secondary text                         */
+  --color-muted: #71717a;         /* tertiary text / labels                 */
+  --color-muted-faint: #a1a1aa;   /* placeholder / disabled                 */
+
+  --color-night: #0a0a0b;         /* dark sections (CTA band, cockpit)      */
+
+  /* Illustration palette — handhold's luminous accent set */
+  --color-viz-blue: #2f8dff;
+  --color-viz-gold: #f3c65b;
+  --color-viz-green: #35cf79;
+  --color-viz-orange: #ff8b45;
+
+  /* Semantic */
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-error: #b91c1c;
+
+  /* Display sizes — handhold.io scale (extralight serif, large + tight) */
+  --text-display-2xl: 5.5rem;     /* hero h1                  ~88px        */
+  --text-display-xl: 4.25rem;     /* section h1 / slug header ~68px        */
+  --text-display-lg: 3.25rem;     /* section h2               ~52px        */
+  --text-display-md: 2.5rem;      /* sub-section h3           ~40px        */
+
+  /* Container widths */
+  --container-prose: 65ch;
+  --container-md: 48rem;
+  --container-lg: 64rem;
+  --container-xl: 80rem;
+
+  /* Motion */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 200ms ease-out;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+/* ============================================================================
+   Base styles
+   ============================================================================ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-feature-settings:
+    "ss01" on,
+    "cv01" on;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================================
+   Handhold.io-inspired layout utilities
+   Clean white surfaces, generous section padding, soft dividers.
+   ============================================================================ */
+
+/* Full-width section wrapper with consistent vertical rhythm */
+.page-section {
+  padding-top: clamp(3.5rem, 7vw, 6rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+/* Dimmed section — alternating background for visual cadence */
+.page-section-muted {
+  background-color: var(--color-canvas-2);
+}
+
+/* Dark/night section for high-contrast CTAs and cockpit-style blocks */
+.page-section-dark {
+  background-color: var(--color-night);
+  color: var(--color-canvas);
+}
+
+/* Eyebrow pill — small label above headings */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.eyebrow-primary {
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.eyebrow-accent {
+  background: var(--color-accent-50);
+  color: var(--color-accent-700);
+}
+
+/* Subtle gradient orb — decorative background element */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.gradient-orb-teal {
+  background: radial-gradient(circle, var(--color-primary-300), transparent 70%);
+}
+
+.gradient-orb-accent {
+  background: radial-gradient(circle, var(--color-accent-300), transparent 70%);
+}
+
+/* ============================================================================
+   Gradient Visual — dark AI/SaaS panel, handhold.io-inspired visual language
+   Deep navy base with layered radial glow blobs + glass overlay
+   ============================================================================ */
+
+.gradient-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(34, 211, 238, 0.26) 0%, transparent 36%),
+    radial-gradient(circle at 82% 12%, rgba(139, 92, 246, 0.30) 0%, transparent 32%),
+    radial-gradient(circle at 52% 88%, rgba(168, 85, 247, 0.20) 0%, transparent 40%),
+    linear-gradient(148deg, #101923 0%, #172433 52%, #0b1118 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.38);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+/* Blurred secondary glow blobs — animated drift */
+.gradient-visual::before {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(56, 189, 248, 0.22) 0%, transparent 30%),
+    radial-gradient(circle at 70% 58%, rgba(240, 171, 252, 0.16) 0%, transparent 26%),
+    radial-gradient(circle at 54% 18%, rgba(139, 92, 246, 0.18) 0%, transparent 28%);
+  filter: blur(52px);
+  pointer-events: none;
+  z-index: 0;
+  animation: blob-drift-a 14s ease-in-out infinite alternate;
+}
+
+/* Top-sheen + bottom-vignette overlay */
+.gradient-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.052) 0%, transparent 38%),
+    linear-gradient(to top, rgba(11, 17, 24, 0.65) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Content sits above both pseudo-elements */
+.gradient-visual > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Desktop hover lift */
+@media (hover: hover) {
+  .gradient-visual:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 44px 120px rgba(0, 0, 0, 0.44),
+      0 0 0 1px rgba(56, 189, 248, 0.14);
+  }
+}
+
+/* Accent variant: teal-pink (AI Cockpit / spotlight panels) */
+.gradient-visual-teal-pink {
+  background:
+    radial-gradient(circle at 16% 26%, rgba(34, 211, 238, 0.28) 0%, transparent 34%),
+    radial-gradient(circle at 84% 14%, rgba(240, 171, 252, 0.24) 0%, transparent 30%),
+    radial-gradient(circle at 48% 84%, rgba(168, 85, 247, 0.22) 0%, transparent 38%),
+    linear-gradient(148deg, #111927 0%, #1a2940 52%, #0c1219 100%);
+}
+
+/* Accent variant: violet-blue (feature / card highlights) */
+.gradient-visual-violet-blue {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(139, 92, 246, 0.26) 0%, transparent 32%),
+    radial-gradient(circle at 78% 20%, rgba(56, 189, 248, 0.22) 0%, transparent 28%),
+    radial-gradient(circle at 55% 82%, rgba(34, 211, 238, 0.16) 0%, transparent 36%),
+    linear-gradient(148deg, #0f1720 0%, #181f30 52%, #0a1118 100%);
+}
+
+/* Optional noise grain — composites over the blobs ::before layer */
+.gradient-visual-grain::before {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.038'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 30% 40%, rgba(56, 189, 248, 0.22) 0%, transparent 30%),
+    radial-gradient(circle at 70% 58%, rgba(240, 171, 252, 0.16) 0%, transparent 26%),
+    radial-gradient(circle at 54% 18%, rgba(139, 92, 246, 0.18) 0%, transparent 28%);
+}
+
+::selection {
+  background: var(--color-primary-100);
+  color: var(--color-primary-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================================================
+   Display utility classes - Sierra-specific, not Tailwind defaults
+   ============================================================================ */
+
+.font-display {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01" on;
+  letter-spacing: -0.02em;
+}
+
+/*
+   Heading scale — each level gets a distinct weight so the hierarchy is
+   immediately readable without relying on size alone.
+
+   display-2xl  200 extralight  → Hero H1, page-defining statement
+   display-xl   300 light       → Section H2, major topic titles
+   display-lg   400 regular     → Sub-section H3, named areas
+   display-md   500 medium      → Card / component H4, labelled blocks
+*/
+.display-2xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6vw + 1rem, var(--text-display-2xl));
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 200;
+}
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.5vw + 1rem, var(--text-display-xl));
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  font-weight: 300;
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw + 1rem, var(--text-display-lg));
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+}
+.display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 2.2vw + 1rem, var(--text-display-md));
+  line-height: 1.1;
+  letter-spacing: -0.022em;
+  font-weight: 500;
+}
+
+/* ============================================================================
+   Body text levels — four distinct tiers below the heading scale.
+
+   body-lg   400 regular    primary paragraph / section subtitle
+   body-md   400 regular    supporting description, card body
+   body-sm   500 medium     meta, secondary label, helper text
+   body-xs   600 semibold   caption, overline, timestamp (uppercase opt-in)
+   ============================================================================ */
+
+.body-lg {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-ink-2);
+}
+
+.body-md {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-ink-2);
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.body-xs {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: var(--color-muted-faint);
+}
+
+/* ============================================================================
+   MDX prose styles for the migrated content body
+   Replaces Tailwind's default prose plugin with Sierra-original styling.
+   ============================================================================ */
+
+.sierra-prose {
+  color: var(--color-ink-2);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+/* `.not-prose` opt-out used by MDX component overrides — reset prose styles
+   so Tailwind utility classes on these elements actually win. */
+.sierra-prose .not-prose,
+.sierra-prose .not-prose * {
+  font-family: inherit;
+}
+.sierra-prose ul.not-prose,
+.sierra-prose .not-prose ul {
+  padding-left: 0;
+  list-style: none;
+}
+.sierra-prose ul.not-prose > li,
+.sierra-prose .not-prose ul > li,
+.sierra-prose .not-prose li {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+.sierra-prose .not-prose figure,
+.sierra-prose figure.not-prose {
+  margin: 0;
+}
+.sierra-prose > * + * {
+  margin-top: 1.4em;
+}
+.sierra-prose h1,
+.sierra-prose h2,
+.sierra-prose h3,
+.sierra-prose h4 {
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-top: 2.2em;
+  margin-bottom: 0.5em;
+  text-wrap: balance;
+}
+/* In-prose h1 only appears when title is rendered inside the article — the
+   slug page renders title separately, so this is rare. Kept for safety. */
+.sierra-prose h1 {
+  font-size: clamp(2.25rem, 3.5vw + 1rem, 3rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+}
+.sierra-prose h2 {
+  font-size: clamp(1.75rem, 2.5vw + 0.5rem, 2.25rem);
+  font-weight: 200;
+}
+.sierra-prose h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.sierra-prose h4 {
+  font-size: 1.1875rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.sierra-prose h5,
+.sierra-prose h6 {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-muted);
+  margin-top: 2.4em;
+  margin-bottom: 0.6em;
+}
+.sierra-prose p {
+  color: var(--color-ink-2);
+}
+.sierra-prose a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--color-line-strong);
+  transition: text-decoration-color var(--transition-base), color var(--transition-base);
+}
+.sierra-prose a:hover {
+  color: var(--color-accent-700);
+  text-decoration-color: var(--color-accent-700);
+}
+.sierra-prose strong,
+.sierra-prose b {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.sierra-prose ul,
+.sierra-prose ol {
+  padding-left: 1.5rem;
+}
+.sierra-prose li + li {
+  margin-top: 0.4em;
+}
+.sierra-prose ul > li {
+  list-style: disc;
+}
+.sierra-prose ol > li {
+  list-style: decimal;
+}
+.sierra-prose blockquote {
+  border-left: 3px solid var(--color-ink);
+  padding: 0.2em 0 0.2em 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.375rem;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--color-ink);
+}
+.sierra-prose img {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: auto;
+}
+.sierra-prose figure {
+  margin: 1.5em 0;
+}
+.sierra-prose figure img {
+  margin: 0;
+}
+.sierra-prose figcaption {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.sierra-prose hr {
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  margin: 2.5em 0;
+}
+.sierra-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-canvas-2);
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+}
+.sierra-prose pre {
+  font-family: var(--font-mono);
+  background: var(--color-night);
+  color: #e2e8f0;
+  padding: 1rem 1.25rem;
+  border-radius: 0.625rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+.sierra-prose pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+.sierra-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.sierra-prose th,
+.sierra-prose td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.625rem 0.875rem;
+  text-align: left;
+}
+.sierra-prose th {
+  font-weight: 600;
+  color: var(--color-ink-2);
+  background: var(--color-canvas-2);
+}
+
+/* ============================================================================
+   Sierra Animation System — handhold.io-inspired motion language
+   Principles: easeOutQuint (0.23,1,0.32,1) timing, restrained durations,
+   respect prefers-reduced-motion, no library dependencies.
+   ============================================================================ */
+
+/* ── Keyframes ──────────────────────────────────────────────────────────────── */
+
+@keyframes float-y {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-12px); }
+}
+
+@keyframes blob-drift-a {
+  0%   { transform: translate(0%,   0%)   scale(1);    }
+  100% { transform: translate(7%,  -5%)   scale(1.07); }
+}
+
+@keyframes blob-drift-b {
+  0%   { transform: translate(0%,  0%)   scale(1);    }
+  100% { transform: translate(-6%, 5%)   scale(0.94); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 1; }
+}
+
+@keyframes shimmer-sweep {
+  from { transform: translateX(-100%) skewX(-15deg); }
+  to   { transform: translateX(220%)  skewX(-15deg); }
+}
+
+@keyframes logo-slide {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes bar-grow {
+  from { width: 0%; }
+  to   { width: var(--bar-to, 100%); }
+}
+
+/* Hero entrance — fires on load, above-the-fold */
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-scale-in {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── Hero entrance animations (CSS-only, no JS) ─────────────────────────────── */
+
+.hero-reveal {
+  animation: hero-fade-up 700ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.hero-reveal-visual {
+  animation: hero-scale-in 800ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+/* Stagger delays for hero children */
+.hero-d0  { animation-delay: 0ms; }
+.hero-d1  { animation-delay: 120ms; }
+.hero-d2  { animation-delay: 240ms; }
+.hero-d3  { animation-delay: 360ms; }
+.hero-d4  { animation-delay: 480ms; }
+
+/* ── Scroll-reveal system ───────────────────────────────────────────────────── */
+
+/* Elements start invisible, transition to visible when .is-visible is added  */
+/* by RevealObserver (IntersectionObserver). Falls back to visible if no JS.   */
+.will-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity  600ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.will-reveal.scale-in {
+  transform: scale(0.95) translateY(12px);
+}
+
+.will-reveal.fade-only {
+  transform: none;
+}
+
+.will-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delay utilities — applies to transition-delay */
+[data-delay="50"]  { transition-delay:  50ms; }
+[data-delay="100"] { transition-delay: 100ms; }
+[data-delay="150"] { transition-delay: 150ms; }
+[data-delay="200"] { transition-delay: 200ms; }
+[data-delay="250"] { transition-delay: 250ms; }
+[data-delay="300"] { transition-delay: 300ms; }
+[data-delay="350"] { transition-delay: 350ms; }
+[data-delay="400"] { transition-delay: 400ms; }
+[data-delay="450"] { transition-delay: 450ms; }
+[data-delay="500"] { transition-delay: 500ms; }
+
+/* ── Float / parallax decoratives ──────────────────────────────────────────── */
+
+.animate-float {
+  animation: float-y 4s ease-in-out infinite alternate;
+}
+.animate-float-slow {
+  animation: float-y 6s ease-in-out infinite alternate;
+}
+.animate-float-delay {
+  animation: float-y 5s 1.8s ease-in-out infinite alternate;
+}
+.animate-float-delay2 {
+  animation: float-y 4.5s 0.9s ease-in-out infinite alternate;
+}
+
+/* ── Blob orb animations ────────────────────────────────────────────────────── */
+
+.animate-blob-a {
+  animation: blob-drift-a 13s ease-in-out infinite alternate;
+}
+.animate-blob-b {
+  animation: blob-drift-b 16s ease-in-out infinite alternate;
+}
+
+/* ── Glow pulse ─────────────────────────────────────────────────────────────── */
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* ── Shimmer sweep on hover ─────────────────────────────────────────────────── */
+
+.shimmer-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.13) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%) skewX(-15deg);
+  pointer-events: none;
+  z-index: 10;
+}
+@media (hover: hover) {
+  .shimmer-wrap:hover::after {
+    animation: shimmer-sweep 650ms ease-out forwards;
+  }
+}
+
+/* ── Logo / partner ticker ──────────────────────────────────────────────────── */
+
+.animate-logo-ticker {
+  animation: logo-slide 40s linear infinite;
+  will-change: transform;
+}
+
+/* ── Progress bar grow ──────────────────────────────────────────────────────── */
+
+.animate-bar-grow {
+  animation: bar-grow 1.4s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-delay: var(--bar-delay, 0.7s);
+}
+
+/* ── Prefers-reduced-motion: disable all non-essential motion ───────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .will-reveal,
+  .will-reveal.scale-in,
+  .will-reveal.fade-only {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .hero-reveal,
+  .hero-reveal-visual {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-delay,
+  .animate-float-delay2,
+  .animate-blob-a,
+  .animate-blob-b,
+  .animate-glow-pulse,
+  .animate-logo-ticker,
+  .animate-bar-grow {
+    animation: none !important;
+  }
+  .gradient-visual::before {
+    animation: none !important;
+  }
+  .shimmer-wrap::after {
+    display: none;
+  }
+}

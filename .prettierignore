@@ -1,0 +1,15 @@
+.next
+node_modules
+pnpm-lock.yaml
+public
+docs/recon-data
+docs/handhold-recon/css
+docs/handhold-recon/_home.html
+docs/handhold-recon/_about.html
+docs/handhold-recon/_pricing.html
+docs/handhold-recon/_all.css
+docs/handhold-recon/_sitemap.xml
+docs/handhold-recon/_css-files.txt
+reference
+.next-types
+content

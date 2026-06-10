@@ -1,0 +1,104 @@
+[
+  {
+    "id": 4671,
+    "date": "2025-07-29T22:15:04",
+    "modified": "2026-02-03T19:58:29",
+    "link": "https:\/\/sierradigitalinc.com\/cookie-policy\/",
+    "title": { "rendered": "cookie policy" },
+    "yoast_head_json": {
+      "title": "cookie policy - Sierra Digital",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/cookie-policy\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "cookie policy - Sierra Digital",
+      "og_description": "To Better Serve You&#8230; Get Started COOKIE POLICY Last updated July 30, 2025 This Cookie Policy explains how Sierra Digital, Inc. (&#8220;Company&#8220;, &#8220;we&#8220;, &#8220;us&#8220;, and &#8220;our&#8220;) uses cookies and similar technologies to recognize you when you visit our websites at https:\/\/staging.sierradigitalinc.com, (&#8220;Websites&#8220;). It explains what these technologies are and why we use them, as well [&hellip;]",
+      "og_url": "https:\/\/sierradigitalinc.com\/cookie-policy\/",
+      "og_site_name": "Sierra Digital",
+      "article_modified_time": "2026-02-03T19:58:29+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Est. reading time": "6 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/cookie-policy\/",
+            "url": "https:\/\/sierradigitalinc.com\/cookie-policy\/",
+            "name": "cookie policy - Sierra Digital",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "datePublished": "2025-07-29T22:15:04+00:00",
+            "dateModified": "2026-02-03T19:58:29+00:00",
+            "breadcrumb": { "@id": "https:\/\/sierradigitalinc.com\/cookie-policy\/#breadcrumb" },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": ["https:\/\/sierradigitalinc.com\/cookie-policy\/"]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/cookie-policy\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              { "@type": "ListItem", "position": 2, "name": "cookie policy" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          }
+        ]
+      }
+    }
+  }
+]

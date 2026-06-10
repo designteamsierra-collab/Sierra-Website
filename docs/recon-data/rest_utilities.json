@@ -1,0 +1,126 @@
+[
+  {
+    "id": 2055,
+    "date": "2025-07-15T18:34:35",
+    "modified": "2026-02-25T19:46:59",
+    "link": "https:\/\/sierradigitalinc.com\/utilities\/",
+    "title": { "rendered": "Utilities" },
+    "yoast_head_json": {
+      "title": "SAP Utilities Industry Solutions for Smart Operations & Growth",
+      "description": "Modernize utility operations with SAP solutions for automation, analytics, and digital transformation. Drive efficiency, scalability, and sustainable growth.",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/utilities\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "SAP Utilities Industry Solutions for Smart Operations & Growth",
+      "og_description": "Modernize utility operations with SAP solutions for automation, analytics, and digital transformation. Drive efficiency, scalability, and sustainable growth.",
+      "og_url": "https:\/\/sierradigitalinc.com\/utilities\/",
+      "og_site_name": "Sierra Digital",
+      "article_modified_time": "2026-02-25T19:46:59+00:00",
+      "og_image": [
+        {
+          "width": 2048,
+          "height": 1365,
+          "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Addressing-Key-Utilities-Challenges.webp",
+          "type": "image\/webp"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Est. reading time": "5 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/utilities\/",
+            "url": "https:\/\/sierradigitalinc.com\/utilities\/",
+            "name": "SAP Utilities Industry Solutions for Smart Operations & Growth",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "primaryImageOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/utilities\/#primaryimage"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/utilities\/#primaryimage" },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Addressing-Key-Utilities-Challenges.webp",
+            "datePublished": "2025-07-15T18:34:35+00:00",
+            "dateModified": "2026-02-25T19:46:59+00:00",
+            "description": "Modernize utility operations with SAP solutions for automation, analytics, and digital transformation. Drive efficiency, scalability, and sustainable growth.",
+            "breadcrumb": { "@id": "https:\/\/sierradigitalinc.com\/utilities\/#breadcrumb" },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              { "@type": "ReadAction", "target": ["https:\/\/sierradigitalinc.com\/utilities\/"] }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https:\/\/sierradigitalinc.com\/utilities\/#primaryimage",
+            "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Addressing-Key-Utilities-Challenges.webp",
+            "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Addressing-Key-Utilities-Challenges.webp",
+            "width": 2048,
+            "height": 1365,
+            "caption": "Addressing Key Utilities Challenges"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/utilities\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              { "@type": "ListItem", "position": 2, "name": "Utilities" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          }
+        ]
+      }
+    }
+  }
+]

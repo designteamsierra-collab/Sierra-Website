@@ -1,0 +1,133 @@
+[
+  {
+    "id": 684,
+    "date": "2025-07-03T15:48:23",
+    "modified": "2026-02-20T19:50:50",
+    "link": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/",
+    "title": { "rendered": "SAP Analytics Cloud" },
+    "yoast_head_json": {
+      "title": "SAP Analytics Cloud Consulting & Implementation | Sierra Digital",
+      "description": "Unlock insights with SAP Analytics Cloud consulting and implementation. Sierra Digital delivers planning, predictive analytics, and SAC solutions.",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "SAP Analytics Cloud Consulting & Implementation | Sierra Digital",
+      "og_description": "Unlock insights with SAP Analytics Cloud consulting and implementation. Sierra Digital delivers planning, predictive analytics, and SAC solutions.",
+      "og_url": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/",
+      "og_site_name": "Sierra Digital",
+      "article_modified_time": "2026-02-20T19:50:50+00:00",
+      "og_image": [
+        {
+          "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/SAP-Analytics-Cloud-1024x576.webp",
+          "type": "",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Est. reading time": "3 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/",
+            "url": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/",
+            "name": "SAP Analytics Cloud Consulting & Implementation | Sierra Digital",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "primaryImageOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/#primaryimage"
+            },
+            "image": {
+              "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/#primaryimage"
+            },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/SAP-Analytics-Cloud-1024x576.webp",
+            "datePublished": "2025-07-03T15:48:23+00:00",
+            "dateModified": "2026-02-20T19:50:50+00:00",
+            "description": "Unlock insights with SAP Analytics Cloud consulting and implementation. Sierra Digital delivers planning, predictive analytics, and SAC solutions.",
+            "breadcrumb": {
+              "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": ["https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/"]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/#primaryimage",
+            "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/SAP-Analytics-Cloud.webp",
+            "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/SAP-Analytics-Cloud.webp",
+            "width": 1280,
+            "height": 720,
+            "caption": "SAP Analytics Cloud"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/sap-analytics-cloud\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              { "@type": "ListItem", "position": 2, "name": "SAP Analytics Cloud" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          }
+        ]
+      }
+    }
+  }
+]

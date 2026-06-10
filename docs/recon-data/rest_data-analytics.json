@@ -1,0 +1,129 @@
+[
+  {
+    "id": 699,
+    "date": "2025-07-03T17:28:21",
+    "modified": "2026-02-20T18:30:33",
+    "link": "https:\/\/sierradigitalinc.com\/data-analytics\/",
+    "title": { "rendered": "Data &#038; Analytics" },
+    "yoast_head_json": {
+      "title": "SAP Business Data Cloud & Analytics Solutions | Sierra Digital",
+      "description": "Unlock enterprise intelligence with SAP Business Data Cloud, SAP Databricks, SAP Datasphere, and SAP Analytics Cloud. Sierra Digital delivers scalable data, analytics, and AI-ready solutions for smarter business decisions.",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/data-analytics\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "SAP Business Data Cloud & Analytics Solutions | Sierra Digital",
+      "og_description": "Unlock enterprise intelligence with SAP Business Data Cloud, SAP Databricks, SAP Datasphere, and SAP Analytics Cloud. Sierra Digital delivers scalable data, analytics, and AI-ready solutions for smarter business decisions.",
+      "og_url": "https:\/\/sierradigitalinc.com\/data-analytics\/",
+      "og_site_name": "Sierra Digital",
+      "article_modified_time": "2026-02-20T18:30:33+00:00",
+      "og_image": [
+        {
+          "width": 1280,
+          "height": 720,
+          "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Business-Data-Cloud.webp",
+          "type": "image\/webp"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Est. reading time": "2 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/",
+            "url": "https:\/\/sierradigitalinc.com\/data-analytics\/",
+            "name": "SAP Business Data Cloud & Analytics Solutions | Sierra Digital",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "primaryImageOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/#primaryimage"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/#primaryimage" },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Business-Data-Cloud.webp",
+            "datePublished": "2025-07-03T17:28:21+00:00",
+            "dateModified": "2026-02-20T18:30:33+00:00",
+            "description": "Unlock enterprise intelligence with SAP Business Data Cloud, SAP Databricks, SAP Datasphere, and SAP Analytics Cloud. Sierra Digital delivers scalable data, analytics, and AI-ready solutions for smarter business decisions.",
+            "breadcrumb": { "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/#breadcrumb" },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": ["https:\/\/sierradigitalinc.com\/data-analytics\/"]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/#primaryimage",
+            "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Business-Data-Cloud.webp",
+            "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Business-Data-Cloud.webp",
+            "width": 1280,
+            "height": 720,
+            "caption": "Business Data Cloud"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/data-analytics\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              { "@type": "ListItem", "position": 2, "name": "Data &#038; Analytics" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          }
+        ]
+      }
+    }
+  }
+]

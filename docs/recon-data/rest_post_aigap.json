@@ -1,0 +1,178 @@
+[
+  {
+    "id": 3608,
+    "link": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/",
+    "title": { "rendered": "THE AI GAP THE COST OF DELAYING DATA MODERNIZATION" },
+    "yoast_head_json": {
+      "title": "The AI Gap: Cost of Delaying Data Modernization & SAP BW Transformation",
+      "description": "Discover why delaying data modernization holds back AI success, and explore seven key transformations from SAP BW modernization that unlock real-time insights, cloud economics, and an AI-ready data foundation.",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "The AI Gap: Cost of Delaying Data Modernization & SAP BW Transformation",
+      "og_description": "Discover why delaying data modernization holds back AI success, and explore seven key transformations from SAP BW modernization that unlock real-time insights, cloud economics, and an AI-ready data foundation.",
+      "og_url": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/",
+      "og_site_name": "Sierra Digital",
+      "article_published_time": "2025-07-22T18:50:30+00:00",
+      "article_modified_time": "2026-02-26T18:32:05+00:00",
+      "og_image": [
+        {
+          "width": 1280,
+          "height": 720,
+          "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/07\/blog-bg-1.png",
+          "type": "image\/png"
+        }
+      ],
+      "author": "Karthik Manoharan",
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Written by": "Karthik Manoharan", "Est. reading time": "2 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#article",
+            "isPartOf": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/"
+            },
+            "author": {
+              "name": "Karthik Manoharan",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/person\/6fcfc849cc2bfcbef5bc495b72f2ab7b"
+            },
+            "headline": "THE AI GAP THE COST OF DELAYING DATA MODERNIZATION",
+            "datePublished": "2025-07-22T18:50:30+00:00",
+            "dateModified": "2026-02-26T18:32:05+00:00",
+            "mainEntityOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/"
+            },
+            "wordCount": 337,
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "image": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#primaryimage"
+            },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/07\/blog-bg-1.png",
+            "articleSection": ["Thought Leadership"],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/",
+            "url": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/",
+            "name": "The AI Gap: Cost of Delaying Data Modernization & SAP BW Transformation",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "primaryImageOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#primaryimage"
+            },
+            "image": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#primaryimage"
+            },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/07\/blog-bg-1.png",
+            "datePublished": "2025-07-22T18:50:30+00:00",
+            "dateModified": "2026-02-26T18:32:05+00:00",
+            "description": "Discover why delaying data modernization holds back AI success, and explore seven key transformations from SAP BW modernization that unlock real-time insights, cloud economics, and an AI-ready data foundation.",
+            "breadcrumb": {
+              "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#primaryimage",
+            "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/07\/blog-bg-1.png",
+            "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/07\/blog-bg-1.png",
+            "width": 1280,
+            "height": 720,
+            "caption": "The AI Gap"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/the-ai-gap-the-cost-of-delaying-data-modernization\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "THE AI GAP THE COST OF DELAYING DATA MODERNIZATION"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/person\/6fcfc849cc2bfcbef5bc495b72f2ab7b",
+            "name": "Karthik Manoharan",
+            "image": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/secure.gravatar.com\/avatar\/36d7fa8c0cf5205338a7f3c4693dfad9a46a9ca9a259a32b637cdcc13833b8ff?s=96&d=mm&r=g",
+              "url": "https:\/\/secure.gravatar.com\/avatar\/36d7fa8c0cf5205338a7f3c4693dfad9a46a9ca9a259a32b637cdcc13833b8ff?s=96&d=mm&r=g",
+              "contentUrl": "https:\/\/secure.gravatar.com\/avatar\/36d7fa8c0cf5205338a7f3c4693dfad9a46a9ca9a259a32b637cdcc13833b8ff?s=96&d=mm&r=g",
+              "caption": "Karthik Manoharan"
+            },
+            "url": "https:\/\/sierradigitalinc.com\/author\/karthik\/"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "id": 929,
+    "date": "2025-07-07T16:00:56",
+    "modified": "2026-02-20T18:37:04",
+    "link": "https:\/\/sierradigitalinc.com\/ai-suite\/",
+    "title": { "rendered": "AI Suite" },
+    "yoast_head_json": {
+      "title": "SAP-Powered AI Suite for Digital Transformation | Sierra Digital",
+      "description": "Accelerate enterprise innovation with Sierra\u2019s AI suite for SAP BTP\u2014ready-to-deploy AI solutions, AI-powered digital adoption, and enterprise-grade AI security for scalable SAP transformation.",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https:\/\/sierradigitalinc.com\/ai-suite\/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "SAP-Powered AI Suite for Digital Transformation | Sierra Digital",
+      "og_description": "Accelerate enterprise innovation with Sierra\u2019s AI suite for SAP BTP\u2014ready-to-deploy AI solutions, AI-powered digital adoption, and enterprise-grade AI security for scalable SAP transformation.",
+      "og_url": "https:\/\/sierradigitalinc.com\/ai-suite\/",
+      "og_site_name": "Sierra Digital",
+      "article_modified_time": "2026-02-20T18:37:04+00:00",
+      "og_image": [
+        {
+          "width": 1280,
+          "height": 720,
+          "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Data-Foundation.webp",
+          "type": "image\/webp"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": { "Est. reading time": "3 minutes" },
+      "schema": {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/",
+            "url": "https:\/\/sierradigitalinc.com\/ai-suite\/",
+            "name": "SAP-Powered AI Suite for Digital Transformation | Sierra Digital",
+            "isPartOf": { "@id": "https:\/\/sierradigitalinc.com\/#website" },
+            "primaryImageOfPage": {
+              "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/#primaryimage"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/#primaryimage" },
+            "thumbnailUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Data-Foundation.webp",
+            "datePublished": "2025-07-07T16:00:56+00:00",
+            "dateModified": "2026-02-20T18:37:04+00:00",
+            "description": "Accelerate enterprise innovation with Sierra\u2019s AI suite for SAP BTP\u2014ready-to-deploy AI solutions, AI-powered digital adoption, and enterprise-grade AI security for scalable SAP transformation.",
+            "breadcrumb": { "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/#breadcrumb" },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              { "@type": "ReadAction", "target": ["https:\/\/sierradigitalinc.com\/ai-suite\/"] }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/#primaryimage",
+            "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Data-Foundation.webp",
+            "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/10\/Data-Foundation.webp",
+            "width": 1280,
+            "height": 720,
+            "caption": "Data Foundation"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/sierradigitalinc.com\/ai-suite\/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https:\/\/sierradigitalinc.com\/"
+              },
+              { "@type": "ListItem", "position": 2, "name": "AI Suite" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/sierradigitalinc.com\/#website",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "name": "Sierra Digital",
+            "description": "",
+            "publisher": { "@id": "https:\/\/sierradigitalinc.com\/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https:\/\/sierradigitalinc.com\/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/sierradigitalinc.com\/#organization",
+            "name": "Sierra Digital",
+            "url": "https:\/\/sierradigitalinc.com\/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/",
+              "url": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "contentUrl": "https:\/\/sierradigitalinc.com\/wp-content\/uploads\/2025\/06\/Single-line-White-scaled-e1751554934710.png",
+              "width": 2560,
+              "height": 337,
+              "caption": "Sierra Digital"
+            },
+            "image": { "@id": "https:\/\/sierradigitalinc.com\/#\/schema\/logo\/image\/" }
+          }
+        ]
+      }
+    }
+  }
+]
