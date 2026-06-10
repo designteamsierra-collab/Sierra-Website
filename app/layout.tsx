@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+  referrer: "no-referrer",
   other: {
     "theme-color": "#0e5b7e",
   },
