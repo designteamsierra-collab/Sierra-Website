@@ -6,9 +6,9 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { getAllContent, getContentBySegments } from "@/lib/content";
 import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { Decoration, OrbCluster, TopoLines, AltitudeScale } from "@/components/ui/Illustrations";
+import { GradientVisual } from "@/components/ui/GradientVisual";
+import { Decoration, PeakSilhouette, OrbCluster } from "@/components/ui/Illustrations";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 
 interface PageProps {
@@ -65,7 +65,7 @@ export default async function Page({ params }: PageProps) {
   if (!entry) notFound();
 
   const { frontmatter, source } = entry;
-  const { label } = POST_TYPE_META[frontmatter.postType ?? "pages"] ?? POST_TYPE_META.pages;
+  const { label, accent } = POST_TYPE_META[frontmatter.postType ?? "pages"] ?? POST_TYPE_META.pages;
 
   return (
     <>
@@ -76,44 +76,44 @@ export default async function Page({ params }: PageProps) {
         />
       ) : null}
 
-      {/* SAC dark teal hero */}
-      <header
-        className="relative overflow-hidden pt-24 pb-28 sm:pt-32 lg:pt-40"
-        style={{ background: "linear-gradient(145deg, #042430 0%, #073549 40%, #0e5b7e 75%, #0a4761 100%)" }}
-      >
-        <Decoration className="inset-0 opacity-[0.07]">
-          <TopoLines className="h-full w-full" tone="white" />
+      {/* Gradient page header — generous padding, peak silhouette divider */}
+      <div className="relative overflow-hidden bg-night">
+        <Decoration className="-top-20 -right-20 h-[420px] w-[420px] opacity-50 animate-blob-a">
+          <OrbCluster className="h-full w-full" variant="violet-blue" />
         </Decoration>
-        <Decoration className="-top-24 -right-24 h-110 w-110 opacity-25">
-          <OrbCluster className="h-full w-full" variant="sky-emerald" />
-        </Decoration>
-        <Container size="lg">
-          <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
+        <Container size="lg" className="relative pb-0 pt-16 sm:pt-20 lg:pt-24">
+          <GradientVisual
+            accent={accent}
+            grain
+            className="px-8 py-14 sm:px-14 sm:py-16 lg:px-20 lg:py-20 hero-reveal-visual hero-d0"
+          >
             {label && (
-              <div className="hero-reveal hero-d0">
+              <div className="hero-reveal hero-d1">
                 <Eyebrow tone="dark">{label}</Eyebrow>
               </div>
             )}
-            <h1 className="display-2xl text-white text-balance hero-reveal hero-d1">
+            <h1
+              className={`display-xl text-white max-w-3xl leading-[1.05] text-balance hero-reveal hero-d2 ${
+                label ? "mt-6" : ""
+              }`}
+            >
               {frontmatter.title}
             </h1>
             {frontmatter.description && (
-              <p
-                className="text-lg leading-relaxed sm:text-xl hero-reveal hero-d2"
-                style={{ color: "rgba(200,230,240,0.75)", maxWidth: "44rem" }}
-              >
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/65 hero-reveal hero-d3">
                 {frontmatter.description}
               </p>
             )}
-          </div>
+          </GradientVisual>
         </Container>
-        <Decoration className="bottom-6 left-8 h-28 hidden lg:block opacity-20">
-          <AltitudeScale className="h-full w-auto" tone="white" />
-        </Decoration>
-      </header>
+        {/* Peak silhouette divider */}
+        <div className="pointer-events-none mt-12 h-20 select-none sm:h-24">
+          <PeakSilhouette className="h-full w-full" tone="white" />
+        </div>
+      </div>
 
-      {/* Prose content */}
-      <Section tone="canvas">
+      {/* Prose content — generous top spacing, centered max-prose column */}
+      <Container size="lg" className="py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-[70ch]">
           <article className="sierra-prose will-reveal" data-delay="100">
             <MDXRemote
@@ -128,7 +128,7 @@ export default async function Page({ params }: PageProps) {
             />
           </article>
         </div>
-      </Section>
+      </Container>
     </>
   );
 }
